@@ -4,7 +4,7 @@
 
 <div class="container">
 
-<form action="{{ url('/producto/save') }}" method="post" action="" >
+<form action="{{ url('/producto/save') }}" method="post" action="" enctype="multipart/form-data">
 
 @csrf
 

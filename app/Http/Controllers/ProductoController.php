@@ -16,7 +16,7 @@ class ProductoController extends Controller
     public function index()
     {
         
-        $datos['productos']=Producto::paginate(1);
+        $datos['productos']=Producto::paginate(10);
         return view('producto.index',$datos);
         
         //
@@ -49,7 +49,7 @@ class ProductoController extends Controller
 
         ];
 
-        $this->validate($request,$campos);
+        //$this->validate($request,$campos);
         //
        // $datosEmpleado = request()->all();
        $datosProducto = request()->except('_token');

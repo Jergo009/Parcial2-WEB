@@ -8,7 +8,8 @@
 <a href="{{url('producto/create')}}" class="btn btn-success">Registrar nuevo producto</a>
 <br/>
 <br/>
-<table class="table table-light">
+<div class="table-responsive">
+<table id="example" class="table table-striped table-bordered" style="width:100%">
     <thead class="thead-light">
         <tr>
             <th>#</th>
@@ -35,6 +36,7 @@
     </tbody>
 
 </table>
+</div>
 {!! $productos->links() !!}
 </div>
 @endsection
